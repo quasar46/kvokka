@@ -1,0 +1,75 @@
+.ReaspektPopupOverlay {
+    position: fixed;
+    z-index: 999999998;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#ReaspektPopupBody {
+    position: fixed;
+    z-index: 999999999;
+    border: 2px solid #cccccc;
+    background-color: #fff;
+    padding: 4em 2em 2em 2em;
+    min-width: 335px;
+}
+
+.ReaspektClosePosition {
+    display: none;
+}
+
+.activeClassBodyReaspekt .ReaspektClosePosition {
+    display: block;
+}
+
+#ReaspektCloseBtn {
+    min-height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#ReaspektCloseBtn .burger__modal {
+    right: 16px;
+}
+
+.reaspektGeobaseTitle,
+#ReaspektPopupContainer {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 33px;
+}
+
+.reaspekt_row a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 27px;
+}
+
+.reaspekt_row a:hover {
+    color: #404040;
+}
+
+.reaspekt_col-sm-4 {
+    margin-bottom: 15px;
+}
+
+
+@media(max-width: 576px) {
+    #ReaspektPopupBody {
+        padding: 2.4em 1em 1em 1em;
+    }
+
+    .reaspektGeobaseTitle,
+    #ReaspektPopupContainer {
+        font-size: 24px;
+    }
+
+    .reaspekt_row a {
+        font-size: 19px;
+    }
+
+}
